@@ -20,3 +20,6 @@ Host system is Fedora just becuase it is not Ubuntu and it has recent enough pod
 ## container units are linked to $HOME/.config/containers:
 
 ln -s ~/<repo>/containers ~/.config/containers/systemd
+
+## Current scheme
+![scheme](/docs/self_hosted.png?raw=true "Scheme")

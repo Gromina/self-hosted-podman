@@ -1,0 +1,17 @@
+[Container]
+ContainerName=ha_main
+Environment=TZ=Europe/Moscow
+Image=homeassistant/home-assistant:2024.10
+Network=host
+PodmanArgs=--privileged
+Volume=%h/volumes/homeassistant/conf:/config:z
+Volume=/run/dbus:/run/dbus:ro
+
+[Service]
+Restart=always
+
+[Unit]
+
+[Install]
+WantedBy=default.target
+

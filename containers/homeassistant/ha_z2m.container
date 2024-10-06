@@ -1,0 +1,17 @@
+[Container]
+AddDevice=/dev/ttyUSB0
+ContainerName=ha_z2m
+Environment=TZ=Europe/Moscow
+Image=ghcr.io/koenkk/zigbee2mqtt
+GroupAdd=keep-groups
+SecurityLabelDisable=true
+PodmanArgs=--privileged
+PublishPort=8002:8002
+Network=slirp4netns
+Volume=%h/volumes/z2m/data:/app/data:z
+Volume=/run/udev:/run/udev:ro
+[Service]
+Restart=always
+[Install]
+WantedBy=default.target
+

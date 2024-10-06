@@ -1,0 +1,17 @@
+[Container]
+ContainerName=jellyfin
+Image=docker.io/jellyfin/jellyfin:latest
+PublishPort=8096:8096
+PublishPort=8920:8920
+PublishPort=7359:7359/udp
+PublishPort=1901:1900/udp
+UserNS=keep-id
+EnvironmentFile=%h/volumes/jellyfin/jellyfin.env
+Volume=%h/volumes/jellyfin/config:/config:z
+Mount=type=bind,source=/data/downloads,destination=/data/tvshows,readonly=false,relabel=private
+Mount=type=bind,source=/data/downloads,destination=/data/movies,readonly=false,relabel=private
+[Service]
+Restart=always
+SuccessExitStatus=0 143
+[Install]
+WantedBy=default.target

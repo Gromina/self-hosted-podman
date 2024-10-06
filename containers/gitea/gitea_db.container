@@ -1,0 +1,9 @@
+[Container]
+ContainerName=postgres_gitea
+Image=postgres:17
+Network=gitea.network
+Volume=%h/volumes/gitea/postgres:/var/lib/postgresql/data:z
+EnvironmentFile=%h/volumes/gitea/db.env
+[Service]
+Restart=always
+

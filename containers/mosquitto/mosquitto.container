@@ -1,0 +1,15 @@
+[Container]
+ContainerName=mosquitto
+Image=eclipse-mosquitto
+PublishPort=1883:1883
+PublishPort=9001:9001
+Volume=%h/volumes/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:z
+Volume=%h/volumes/mosquitto/data:/mosquitto/data:z
+Volume=%h/volumes/mosquitto/logs:/mosquitto/log:z
+Network=slirp4netns
+[Install]
+WantedBy=default.target
+[Service]
+Restart=always
+[Unit]
+

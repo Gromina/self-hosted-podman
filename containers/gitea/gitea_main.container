@@ -1,0 +1,15 @@
+[Container]
+ContainerName=gitea
+Image=gitea/gitea:1.22-rootless
+Network=gitea.network
+PublishPort=3000:3000
+PublishPort=222:22
+EnvironmentFile=%h/volumes/gitea/gitea.env
+Volume=%h/volumes/gitea/gitea:/data:z
+Volume=/etc/localtime:/etc/localtime:ro
+
+[Service]
+Restart=always
+
+[Unit]
+Requires=gitea_db.service

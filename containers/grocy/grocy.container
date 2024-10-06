@@ -1,0 +1,9 @@
+[Container]
+ContainerName=grocy
+EnvironmentFile=%h/volumes/grocy/grocy.env
+Image=lscr.io/linuxserver/grocy:4.2.0
+PublishPort=9283:80
+Volume=%h/volumes/grocy/app-db:/config:z
+[Service]
+Restart=always
+

@@ -2,6 +2,8 @@
 
 Containers work. However this repo is still needs 
 - documentation
+  - firewall setup
+  - privileged ports instructions
 - .env files sample
 - and more testing
 

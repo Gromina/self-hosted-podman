@@ -9,8 +9,8 @@ Containers work. However this repo is still needs
 
 ## My folder structure is as following
 
-$HOME/<repo>
-$HOME/volumes
+- $HOME/<repo>  # this repo
+- $HOME/volumes # contaners' data and env files
 
 ## container units are linked to $HOME/.config/containers:
 

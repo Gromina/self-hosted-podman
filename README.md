@@ -14,12 +14,12 @@ Host system is Fedora just becuase it is not Ubuntu and it has recent enough pod
 
 ## My folder structure is as following
 
-- $HOME/<repo>  # this repo
+- $HOME/\<repo\>  # this repo
 - $HOME/volumes # contaners' data and env files
 
 ## container units are linked to $HOME/.config/containers:
 
-ln -s ~/<repo>/containers ~/.config/containers/systemd
+ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 
 ## Current scheme
 ![scheme](/docs/self_hosted.png?raw=true "Scheme")

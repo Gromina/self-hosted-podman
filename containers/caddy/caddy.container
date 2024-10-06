@@ -1,0 +1,15 @@
+[Container]
+ContainerName=caddy
+AddCapability=NET_ADMIN
+EnvironmentFile=%h/volumes/caddy/caddy.env
+Image=ghcr.io/caddybuilds/caddy-cloudflare:latest
+PublishPort=80:80
+PublishPort=443:443
+PublishPort=443:443/udp
+Volume=%h/volumes/caddy/Caddyfile:/etc/caddy/Caddyfile:z
+Volume=%h/volumes/caddy/data:/data:z
+Volume=%h/volumes/caddy/config:/config:z
+Network=slirp4netns
+
+[Service]
+Restart=always

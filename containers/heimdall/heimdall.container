@@ -2,10 +2,13 @@
 ContainerName=heimdall
 Environment=TZ=Europe/Moscow
 Image=lscr.io/linuxserver/heimdall
-PublishPort=80:80
+PublishPort=3290:80
 Volume=%h/volumes/heimdall/config:/config:z
+Network=slirp4netns
+
 [Install]
 WantedBy=default.target
+
 [Service]
 Restart=always
 

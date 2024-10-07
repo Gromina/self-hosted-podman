@@ -14,5 +14,8 @@ User=%U
 [Service]
 Restart=always
 
+[Install]
+WantedBy=default.target
+
 [Unit]
 Requires=gitea_db.service

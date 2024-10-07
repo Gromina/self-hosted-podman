@@ -7,3 +7,5 @@ Volume=%h/volumes/grocy/app-db:/config:z
 [Service]
 Restart=always
 
+[Install]
+WantedBy=default.target

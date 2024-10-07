@@ -11,5 +11,8 @@ Volume=%h/volumes/caddy/data:/data:z
 Volume=%h/volumes/caddy/config:/config:z
 Network=slirp4netns
 
+[Install]
+WantedBy=default.target
+
 [Service]
 Restart=always

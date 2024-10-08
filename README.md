@@ -33,3 +33,4 @@ ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 - [JupyterLab](https://jupyter.org/)
 - [VaultWarden](https://github.com/dani-garcia/vaultwarden)
 - [PenPot](https://penpot.app/)
+- [Forgejo](https://codeberg.org/forgejo/forgejo)

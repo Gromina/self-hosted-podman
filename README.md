@@ -23,3 +23,13 @@ ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 
 ## Current scheme
 ![scheme](/docs/self_hosted.png?raw=true "Scheme")
+
+
+## Services TODO
+- [Calibre Web](https://github.com/janeczku/calibre-web)
+- [RatHole](https://github.com/rapiz1/rathole)
+- [SnapCast](https://github.com/badaix/snapcast)
+- [Mopidy](https://github.com/badaix/snapcast/blob/develop/doc/player_setup.md#mopidy)
+- [JupyterLab](https://jupyter.org/)
+- [VaultWarden](https://github.com/dani-garcia/vaultwarden)
+- [PenPot](https://penpot.app/)

@@ -1,0 +1,26 @@
+# https://mmarco94.github.io/linux-guides/immutable-os/syncthing.html
+[Container]
+ContainerName=syncthing
+EnvironmentFile=%h/volumes/syncthing/syncthing.env
+Image=syncthing/syncthing:latest
+Network=host
+UserNS=keep-id:uid=1001,gid=1001
+# Volume=/data/containers/syncthing/config:/config:z
+# Volume=/data/containers/syncthing/data:/data:z
+Volume=/data/containers/syncthing:/var/syncthing:z
+
+[Service]
+Restart=always
+
+[Unit]
+Description=Podman syncthing.service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Restart=on-failure
+TimeoutStartSec=900
+
+    
+[Install]
+WantedBy=default.target

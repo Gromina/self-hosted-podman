@@ -1,0 +1,14 @@
+[Container]
+ContainerName=calibre-web
+Image=lscr.io/linuxserver/calibre-web:latest
+PublishPort=8083:8083
+Volume=%h/volumes/calibre-web/config:/config:z
+Volume=%h/volumes/calibre-web/books:/books:z
+EnvironmentFile=%h/volumes/calibre-web/calibre-web.env
+Network=slirp4netns
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,17 @@
+# https://github.com/crazy-max/docker-samba
+[Container]
+AddCapability=CAP_NET_ADMIN CAP_NET_RAW
+ContainerName=samba
+EnvironmentFile=%h/volumes/samba/samba.env
+HostName=zelserver
+Image=crazymax/samba
+Network=host
+Volume=%h/volumes/samba/data:/data:z
+Volume=%h/volumes/syncthing/data/:/samba/public/syncthing:z
+Volume=%h/volumes/transmission/data/:/samba/public/transmission:z
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always

@@ -1,0 +1,19 @@
+[Container]
+Image=gists/transmission
+ContainerName=transmission
+PublishPort=9091:9091
+PublishPort=51413:51413
+PublishPort=51413:51413/udp
+# Volume=%h/volumes/transmission/config:/config:z
+Volume=%h/volumes/transmission/data:/data:z
+# Volume=%h/volumes/transmission/incomplete:/transmission/incomplete:z
+# Volume=%h/volumes/transmission/movies:/transmission/movies:z
+
+EnvironmentFile=%h/volumes/transmission/transmission.env
+# Network=host
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always

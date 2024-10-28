@@ -1,0 +1,16 @@
+[Container]
+Image=lldap/lldap:latest-alpine-rootless
+ContainerName=lldap
+PublishPort=17170:17170
+EnvironmentFile=%h/volumes/lldap/lldap.env
+Volume=%h/volumes/lldap/data:/data:z
+Network=lldap.network
+UserNS=keep-id
+User=%U
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+

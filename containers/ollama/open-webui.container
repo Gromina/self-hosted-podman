@@ -1,0 +1,14 @@
+[Unit]
+Requires=ollama.service
+After=ollama.service
+
+[Container]
+ContainerName=open-webui
+EnvironmentFile=%h/volumes/ollama/ollama.env
+Image=ghcr.io/open-webui/open-webui:latest
+Network=ollama.network
+PublishPort=7080:8080
+Volume=%h/volumes/ollama/open-webui:/app/backend/data:z
+
+[Service]
+Restart=always

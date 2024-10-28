@@ -1,0 +1,10 @@
+[Container]
+ContainerName=ollama
+Image=ollama/ollama:latest
+Network=ollama.network
+PodmanArgs=--tty
+Pull=always
+Volume=%h/volumes/ollama/ollama:/root/.ollama:z
+
+[Service]
+Restart=always

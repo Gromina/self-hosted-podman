@@ -21,19 +21,6 @@ Host system is Fedora just becuase it is not Ubuntu and it has recent enough pod
 
 ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 
-## Current scheme
-![scheme](/docs/self_hosted.png?raw=true "Scheme")
-
-
-## Services TODO
-- [Calibre Web](https://github.com/janeczku/calibre-web)
-- [RatHole](https://github.com/rapiz1/rathole)
-- [SnapCast](https://github.com/badaix/snapcast)
-- [Mopidy](https://github.com/badaix/snapcast/blob/develop/doc/player_setup.md#mopidy)
-- [JupyterLab](https://jupyter.org/)
-- [VaultWarden](https://github.com/dani-garcia/vaultwarden)
-- [PenPot](https://penpot.app/)
-- [Forgejo](https://codeberg.org/forgejo/forgejo)
 
 | | Service | Comment | Ports | Networks |
 |---|---|---|---|---|
@@ -55,5 +42,6 @@ ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 | :hammer::  | [Mopidy](https://github.com/badaix/snapcast/blob/develop/doc/player_setup.md#mopidy)  |   | |  |
 | :hammer:  | [SnapCast](https://github.com/badaix/snapcast)  |   | |  |
 | :hammer:  | [RatHole](https://github.com/rapiz1/rathole)  |   | |  |
+| :hammer:  | [JupyterLab](https://jupyter.org/)  |   | |  |
 |   |   |   |   |   |
 |   |   |   |   |   |

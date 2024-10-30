@@ -34,3 +34,18 @@ ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 - [VaultWarden](https://github.com/dani-garcia/vaultwarden)
 - [PenPot](https://penpot.app/)
 - [Forgejo](https://codeberg.org/forgejo/forgejo)
+
+| | Service | Comment | Ports | Networks |
+|---|---|---|---|---|
+| :heavy_check_mark:  | [Home assistant](https://www.home-assistant.io/) |   | 0.0.0.0:8123 |   |
+| :heavy_check_mark:  | [Syncthing](https://syncthing.net/)  |  | 0.0.0.0:8384 |   |
+| :heavy_check_mark: | [Transmission](https://transmissionbt.com/)  |   | 0.0.0.0:9091 |   |
+| :heavy_check_mark:  | [Jellyfin](https://jellyfin.org/) |   | 0.0.0.0:8096 | lldap |
+| :heavy_check_mark:  | [Gitea](https://about.gitea.com/)  |   | 0.0.0.0:3000  |   |
+| :heavy_check_mark: | [Calibre Web](https://github.com/janeczku/calibre-web)  |   | 0.0.0.0:8083  | lldap  |
+| :heavy_check_mark:  | [Z2M](https://www.zigbee2mqtt.io/) |   | 0.0.0.0:8002  |   |
+| :heavy_check_mark:  | [Grocy](https://grocy.info/)  |   | 0.0.0.0:9283 ; grocy.h.MYSERVER.com  | lldap  |
+| :heavy_check_mark:  | [Lldap](https://github.com/lldap/lldap)  |   | 0.0.0.0:17170  | lldap ; 0.0.0.0:3890  |
+| :heavy_check_mark:  | [Caddy](https://caddyserver.com/)  |   | 0.0.0.0:80,443 | lldap ; 0.0.0.0:3890  |
+|   |   |   |   |   |
+|   |   |   |   |   |

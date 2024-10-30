@@ -46,7 +46,8 @@ ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 | :heavy_check_mark:  | [Z2M](https://www.zigbee2mqtt.io/) |   | 0.0.0.0:8002  |   |
 | :heavy_check_mark:  | [Grocy](https://grocy.info/)  |   | 0.0.0.0:9283 ; grocy.h.MYSERVER.com  | lldap  |
 | :heavy_check_mark:  | [Lldap](https://github.com/lldap/lldap)  |   | 0.0.0.0:17170  | lldap ; 0.0.0.0:3890  |
-| :heavy_check_mark:  | [Caddy](https://caddyserver.com/)  |   | 0.0.0.0:80,443 | lldap ; 0.0.0.0:3890  |
+| :heavy_check_mark:  | [Caddy](https://caddyserver.com/)  |   | 0.0.0.0:80,443 |   |
+| :heavy_check_mark:  | [Homarr](https://homarr.dev/)  |   | 0.0.0.0:7575 |   |
 | :hammer:  | [PenPot](https://penpot.app/)  |   | |  |
 | :hammer:  | [VaultWarden](https://github.com/dani-garcia/vaultwarden)  |   | |  |
 | :hammer:  | [Forgejo](https://codeberg.org/forgejo/forgejo)  |   | |  |

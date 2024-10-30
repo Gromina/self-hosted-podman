@@ -48,6 +48,7 @@ ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 | :heavy_check_mark:  | [Lldap](https://github.com/lldap/lldap)  |   | 0.0.0.0:17170  | lldap ; 0.0.0.0:3890  |
 | :heavy_check_mark:  | [Caddy](https://caddyserver.com/)  |   | 0.0.0.0:80,443 |   |
 | :heavy_check_mark:  | [Homarr](https://homarr.dev/)  |   | 0.0.0.0:7575 |   |
+| :heavy_check_mark:  | [Ollama](https://ollama.com/)  | Ollama + Open-WebUI  | 0.0.0.0:7080 |   |
 | :hammer:  | [PenPot](https://penpot.app/)  |   | |  |
 | :hammer:  | [VaultWarden](https://github.com/dani-garcia/vaultwarden)  |   | |  |
 | :hammer:  | [Forgejo](https://codeberg.org/forgejo/forgejo)  |   | |  |

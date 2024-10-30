@@ -43,5 +43,5 @@ ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 | :hammer:  | [SnapCast](https://github.com/badaix/snapcast)  |   | |  |
 | :hammer:  | [RatHole](https://github.com/rapiz1/rathole)  |   | |  |
 | :hammer:  | [JupyterLab](https://jupyter.org/)  |   | |  |
-|   |   |   |   |   |
+| :hammer:   | [LeanTime](https://leantime.io/)  |   |   |   |
 |   |   |   |   |   |

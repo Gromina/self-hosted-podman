@@ -43,7 +43,7 @@ ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 | :hammer:  | [SnapCast](https://github.com/badaix/snapcast)  |`TCP/UDP tunelling  | |  |
 | :hammer:  | [JupyterLab](https://jupyter.org/)  | Python experiments in browser  | |  |
 | :hammer:   | [LeanTime](https://leantime.io/)  | Project management  |   |   |
-| :hammer:   | [Wyoming whisper]([https://leantime.io/](https://github.com/rhasspy/wyoming-faster-whisper))  | STT for Home assistant  |   |   |
-| :hammer:   | [Wyoming piper]([https://leantime.io/](https://hub.docker.com/r/rhasspy/wyoming-piper))  | TTS for Home assistant  |   |   |
-| :hammer:   | [wyoming openwakeword]([https://leantime.io/](https://github.com/rhasspy/wyoming-openwakeword))  | Word activation for Home assistant  |   |   |
+| :hammer:   | [Wyoming whisper](https://github.com/rhasspy/wyoming-faster-whisper)  | STT for Home assistant  |   |   |
+| :hammer:   | [Wyoming piper](https://hub.docker.com/r/rhasspy/wyoming-piper)  | TTS for Home assistant  |   |   |
+| :hammer:   | [wyoming openwakeword](https://github.com/rhasspy/wyoming-openwakeword)  | Word activation for Home assistant  |   |   |
 |   |   |   |   |   |

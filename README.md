@@ -39,8 +39,9 @@ ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 | :hammer:  | [PenPot](https://penpot.app/)  |   | |  |
 | :hammer:  | [VaultWarden](https://github.com/dani-garcia/vaultwarden)  | Self hosted Bitwarden server  | |  |
 | :hammer:  | [Forgejo](https://codeberg.org/forgejo/forgejo)  | Gitea fork  | |  |
-| :hammer::  | [Mopidy](https://github.com/badaix/snapcast/blob/develop/doc/player_setup.md#mopidy)  | Media streaming  | |  |
-| :hammer:  | [SnapCast](https://github.com/badaix/snapcast)  |`TCP/UDP tunelling  | |  |
+| :hammer::  | [Mopidy](https://mopidy.com/)  | Media streaming  | |  |
+| :hammer:  | [SnapCast](https://github.com/badaix/snapcast)  | Multi room media streaming  | |  |
+| :hammer:  | [Rathole](https://github.com/rapiz1/rathole)  |`TCP/UDP tunelling  | |  |
 | :hammer:  | [JupyterLab](https://jupyter.org/)  | Python experiments in browser  | |  |
 | :hammer:   | [LeanTime](https://leantime.io/)  | Project management  |   |   |
 | :hammer:   | [Wyoming whisper](https://github.com/rhasspy/wyoming-faster-whisper)  | STT for Home assistant  |   |   |

@@ -36,11 +36,11 @@ ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 | :heavy_check_mark:  | [Caddy](https://caddyserver.com/)  | HTTP/HTTPS server proxy  | 0.0.0.0:80,443 |   |
 | :heavy_check_mark:  | [Homarr](https://homarr.dev/)  | homepage  | 0.0.0.0:7575 |   |
 | :heavy_check_mark:  | [Ollama](https://ollama.com/)  | Ollama + Open-WebUI  | 0.0.0.0:7080 |   |
+| :hammer:  | [SnapCast](https://github.com/badaix/snapcast)  | Multi room media streaming  | |  |
 | :hammer:  | [PenPot](https://penpot.app/)  |   | |  |
 | :hammer:  | [VaultWarden](https://github.com/dani-garcia/vaultwarden)  | Self hosted Bitwarden server  | |  |
-| :hammer:  | [Forgejo](https://codeberg.org/forgejo/forgejo)  | Gitea fork  | |  |
+| :heavy_check_mark:  | [Forgejo](https://codeberg.org/forgejo/forgejo)  | Gitea fork  | |  |
 | :hammer::  | [Mopidy](https://mopidy.com/)  | Media streaming  | |  |
-| :hammer:  | [SnapCast](https://github.com/badaix/snapcast)  | Multi room media streaming  | |  |
 | :hammer:  | [Rathole](https://github.com/rapiz1/rathole)  |`TCP/UDP tunelling  | |  |
 | :hammer:  | [JupyterLab](https://jupyter.org/)  | Python experiments in browser  | |  |
 | :hammer:   | [LeanTime](https://leantime.io/)  | Project management  |   |   |

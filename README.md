@@ -36,15 +36,15 @@ ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 | :heavy_check_mark:  | [Caddy](https://caddyserver.com/)  | HTTP/HTTPS server proxy  | 0.0.0.0:80,443 |   |
 | :heavy_check_mark:  | [Homarr](https://homarr.dev/)  | homepage  | 0.0.0.0:7575 |   |
 | :heavy_check_mark:  | [Ollama](https://ollama.com/)  | Ollama + Open-WebUI  | 0.0.0.0:7080 |   |
+| :heavy_check_mark:  | [Forgejo](https://codeberg.org/forgejo/forgejo)  | Gitea fork  | |  |
 | :hammer:  | [SnapCast](https://github.com/badaix/snapcast)  | Multi room media streaming  | |  |
 | :hammer:  | [PenPot](https://penpot.app/)  |   | |  |
 | :hammer:  | [VaultWarden](https://github.com/dani-garcia/vaultwarden)  | Self hosted Bitwarden server  | |  |
-| :heavy_check_mark:  | [Forgejo](https://codeberg.org/forgejo/forgejo)  | Gitea fork  | |  |
 | :hammer::  | [Mopidy](https://mopidy.com/)  | Media streaming  | |  |
 | :hammer:  | [Rathole](https://github.com/rapiz1/rathole)  |`TCP/UDP tunelling  | |  |
 | :hammer:  | [JupyterLab](https://jupyter.org/)  | Python experiments in browser  | |  |
-| :hammer:   | [LeanTime](https://leantime.io/)  | Project management  |   |   |
 | :hammer:   | [Wyoming whisper](https://github.com/rhasspy/wyoming-faster-whisper)  | STT for Home assistant  |   |   |
 | :hammer:   | [Wyoming piper](https://hub.docker.com/r/rhasspy/wyoming-piper)  | TTS for Home assistant  |   |   |
 | :hammer:   | [wyoming openwakeword](https://github.com/rhasspy/wyoming-openwakeword)  | Word activation for Home assistant  |   |   |
+| :hammer:   | [LeanTime](https://leantime.io/)  | Project management  |   |   |
 |   |   |   |   |   |

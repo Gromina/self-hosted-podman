@@ -1,0 +1,10 @@
+[Container]
+ContainerName=whisper
+Environment=TZ=Europe/Moscow
+Exec=--model tiny-int8 --language ru
+Image=rhasspy/wyoming-whisper
+PublishPort=10300:10300
+Volume=/opt/whisper-data:/data
+
+[Service]
+Restart=always

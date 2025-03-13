@@ -1,0 +1,14 @@
+[Unit]
+Requires=penpot-postgres.service penpot-redis.service penpot-mailcatch.service
+After=penpot-postgres.service penpot-redis.service
+
+[Container]
+ContainerName=penpot-backend
+EnvironmentFile=%h/volumes/penpot/penpot-backend.env
+Image=penpotapp/backend:2.5.2
+Network=penpot.network
+Volume=%h/volumes/penpot/penpot_assets:/opt/data/assets:z
+UserNS=keep-id
+
+[Service]
+Restart=always

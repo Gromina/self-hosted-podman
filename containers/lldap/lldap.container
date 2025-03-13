@@ -1,6 +1,7 @@
 [Container]
 Image=lldap/lldap:latest-alpine-rootless
 ContainerName=lldap
+HostName=lldap
 PublishPort=17170:17170
 EnvironmentFile=%h/volumes/lldap/lldap.env
 Volume=%h/volumes/lldap/data:/data:z

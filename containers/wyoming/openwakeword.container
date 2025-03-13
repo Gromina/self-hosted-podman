@@ -1,0 +1,13 @@
+[Container]
+ContainerName=openwakeword
+Environment=TZ=Europe/Moscow
+Exec=--preload-model alexa --custom-model-dir /custom
+Image=rhasspy/wyoming-openwakeword
+PublishPort=10400:10400
+Volume=./wakeword:/data
+Volume=./wakeword:/custom
+Volume=/etc/timezone:/etc/timezone:ro
+Volume=/etc/localtime:/etc/localtime:ro
+
+[Service]
+Restart=always

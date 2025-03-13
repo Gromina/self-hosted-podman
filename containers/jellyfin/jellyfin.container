@@ -6,6 +6,7 @@ PublishPort=8920:8920
 PublishPort=7359:7359/udp
 PublishPort=1901:1900/udp
 UserNS=keep-id
+Network=lldap.network
 EnvironmentFile=%h/volumes/jellyfin/jellyfin.env
 Volume=%h/volumes/jellyfin/config:/config:z
 Mount=type=bind,source=/data/downloads,destination=/data/tvshows,readonly=false,relabel=private

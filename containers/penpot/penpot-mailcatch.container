@@ -1,0 +1,9 @@
+[Container]
+ContainerName=penpot-mailcatch
+ExposeHostPort=1025
+Image=sj26/mailcatcher:latest
+Network=penpot.network
+PublishPort=1080:1080
+
+[Service]
+Restart=always

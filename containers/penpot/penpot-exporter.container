@@ -1,0 +1,12 @@
+[Unit]
+Requires=penpot-redis.service
+After=penpot-redis.service
+
+[Container]
+ContainerName=penpot-exporter
+EnvironmentFile=%h/volumes/penpot/penpot-exporter.env
+Image=penpotapp/exporter:2.5.2
+Network=penpot.network
+
+[Service]
+Restart=always

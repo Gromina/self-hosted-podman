@@ -6,6 +6,8 @@ Network=host
 PodmanArgs=--privileged
 Volume=%h/volumes/homeassistant/conf:/config:z
 Volume=/run/dbus:/run/dbus:ro
+UserNS=keep-id
+User=%U
 
 [Service]
 Restart=always

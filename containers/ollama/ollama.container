@@ -8,3 +8,6 @@ Volume=%h/volumes/ollama/ollama:/root/.ollama:z
 
 [Service]
 Restart=always
+
+[Install]
+WantedBy=default.target

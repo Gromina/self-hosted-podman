@@ -1,0 +1,17 @@
+[Container]
+ContainerName=mysql-leantime
+HostName=mysql-leantime
+EnvironmentFile=%h/volumes/leantime/mysql.env
+Exec='--character-set-server=UTF8MB4' '--collation-server=UTF8MB4_unicode_ci'
+Image=mysql:8.4
+Network=leantime.network
+Volume=%h/volumes/leantime/db_data:/var/lib/mysql:z
+
+UserNS=keep-id
+User=%U
+
+[Service]
+Restart=always
+
+
+

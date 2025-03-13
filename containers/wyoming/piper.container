@@ -1,0 +1,10 @@
+[Container]
+ContainerName=piper
+Environment=TZ=Europe/Moscow
+Exec=--voice ru_RU-irina-medium
+Image=rhasspy/wyoming-piper
+PublishPort=10200:10200
+Volume=/opt/piper-data:/data
+
+[Service]
+Restart=always

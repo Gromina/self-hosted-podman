@@ -1,0 +1,7 @@
+[Container]
+ContainerName=penpot-redis
+Image=redis:7.2
+Network=penpot.network
+
+[Service]
+Restart=always

@@ -10,5 +10,9 @@ Network=ollama.network
 PublishPort=7080:8080
 Volume=%h/volumes/ollama/open-webui:/app/backend/data:z
 
+[Install]
+WantedBy=default.target
+
 [Service]
 Restart=always
+

@@ -1,0 +1,15 @@
+[Unit]
+Requires=penpot-backend.service penpot-exporter.service
+After=penpot-backend.service penpot-exporter.service
+
+[Container]
+ContainerName=penpot-frontend
+EnvironmentFile=%h/volumes/penpot/penpot-frontend.env
+Image=penpotapp/frontend:2.5.2
+Network=penpot.network
+PublishPort=9901:8080
+Volume=%h/volumes/penpot/penpot_assets:/opt/data/assets:z
+UserNS=keep-id
+
+[Service]
+Restart=always

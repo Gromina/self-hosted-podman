@@ -1,0 +1,16 @@
+[Container]
+ContainerName=homarr
+Image=ghcr.io/ajnart/homarr:latest
+PublishPort=7575:7575
+Volume=/run/user/%U/podman/podman.sock:/var/run/docker.sock
+Volume=%h/volumes/homarr/configs:/app/data/configs:z
+Volume=%h/volumes/homarr/icons:/app/public/icons:z
+Volume=%h/volumes/homarr/data:/data:z
+Network=slirp4netns
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always
+

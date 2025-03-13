@@ -1,0 +1,50 @@
+services:
+  ## wyoming
+  whisper:
+    container_name: whisper
+    image: rhasspy/wyoming-whisper
+    command: --model tiny-int8 --language ru
+    volumes:
+      - /opt/whisper-data:/data
+    environment:
+      - TZ=Europe/Moscow
+    restart: unless-stopped
+    ports:
+      - 10300:10300
+  ### 
+  piper:
+    container_name: piper
+    image: rhasspy/wyoming-piper
+    command: --voice ru_RU-irina-medium
+    volumes:
+      - /opt/piper-data:/data
+    environment:
+      - TZ=Europe/Moscow
+    restart: unless-stopped
+    ports:
+      - 10200:10200
+  vosk_wyoming:
+    container_name: vosk_wyoming
+    image: rhasspy/wyoming-vosk
+    command: --data-dir /data --debug --uri tcp://0.0.0.0:10300 --language ru --preload-language ru --sentences-dir /data/sentences
+    volumes:
+      - ./vosk:/data
+    environment:
+      - TZ=Europe/Moscow
+    restart: unless-stopped
+    ports:
+      - 10350:10300
+  openwakeword:
+    container_name: openwakeword
+    image: rhasspy/wyoming-openwakeword
+    ports:
+      - 10400:10400
+    volumes:
+      - ./wakeword:/data
+      - ./wakeword:/custom
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - TZ=Europe/Moscow
+    command: --preload-model 'alexa' --custom-model-dir /custom
+    restart: unless-stopped

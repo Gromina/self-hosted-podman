@@ -1,0 +1,11 @@
+[Container]
+ContainerName=forgejo_db
+Image=postgres:14
+Network=forgejo.network
+Volume=%h/volumes/forgejo/postgres:/var/lib/postgresql/data:z
+EnvironmentFile=%h/volumes/forgejo/forgejo-db.env
+UserNS=keep-id
+User=%U
+
+[Service]
+Restart=always

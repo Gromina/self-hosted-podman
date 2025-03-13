@@ -1,0 +1,10 @@
+[Container]
+ContainerName=vosk_wyoming
+Environment=TZ=Europe/Moscow
+Exec=--data-dir /data --debug --uri tcp://0.0.0.0:10300 --language ru --preload-language ru --sentences-dir /data/sentences
+Image=rhasspy/wyoming-vosk
+PublishPort=10350:10300
+Volume=./vosk:/data
+
+[Service]
+Restart=always

@@ -1,0 +1,10 @@
+[Container]
+ContainerName=penpot-postgres
+EnvironmentFile=%h/volumes/penpot/penpot-postgres.env
+Image=postgres:15
+Network=penpot.network
+PodmanArgs=--stop-signal SIGINT
+Volume=%h/volumes/penpot/postgres_data:/var/lib/postgresql/data:z
+
+[Service]
+Restart=always

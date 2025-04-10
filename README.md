@@ -48,3 +48,8 @@ ln -s ~/\<repo\>/containers ~/.config/containers/systemd
 | :hammer:   | [wyoming openwakeword](https://github.com/rhasspy/wyoming-openwakeword)  | Word activation for Home assistant  |   |   |
 | :hammer:   | [LeanTime](https://leantime.io/)  | Project management  |   |   |
 |   |   |   |   |   |
+
+
+## Useful links
+- https://github.com/redbeardymcgee/podbox
+- https://git.mo8it.com/mo8it/main_server
